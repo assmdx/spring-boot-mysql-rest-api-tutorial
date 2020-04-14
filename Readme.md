@@ -1,67 +1,27 @@
-# Spring Boot, MySQL, JPA, Hibernate Rest API Tutorial
+# 图书出版社作者java程序
 
-Build Restful CRUD API for a simple Note-Taking application using Spring Boot, Mysql, JPA and Hibernate.
+## 依赖环境
 
-## Requirements
-
-1. Java - 1.8.x
+1. Java - 1.8.x （本地得安装jdk1.8）
 
 2. Maven - 3.x.x
 
-3. Mysql - 5.x.x
+3. Mysql - 5.x.x （本地得装个mysql数据库）
 
-## Steps to Setup
+## 使用方法
 
-**1. Clone the application**
-
-```bash
-git clone https://github.com/callicoder/spring-boot-mysql-rest-api-tutorial.git
-```
-
-**2. Create Mysql database**
-```bash
-create database notes_app
-```
-
-**3. Change mysql username and password as per your installation**
-
-+ open `src/main/resources/application.properties`
-
-+ change `spring.datasource.username` and `spring.datasource.password` as per your mysql installation
-
-**4. Build and run the app using maven**
+1. 把代码克隆到本地，或者下载到本地
 
 ```bash
-mvn package
-java -jar target/easy-notes-1.0.0.jar
+git clone https://github.com/asssmdx/spring-boot-mysql-rest-api-tutorial.git
 ```
 
-Alternatively, you can run the app without packaging it using -
+2. 创建数据库
+
+- 在本地创建一个fycard2的数据库（用户名，密码设置为root）
 
 ```bash
-mvn spring-boot:run
+create database fycard2;
 ```
 
-The app will start running at <http://localhost:8080>.
-
-## Explore Rest APIs
-
-The app defines following CRUD APIs.
-
-    GET /api/notes
-    
-    POST /api/notes
-    
-    GET /api/notes/{noteId}
-    
-    PUT /api/notes/{noteId}
-    
-    DELETE /api/notes/{noteId}
-
-You can test them using postman or any other rest client.
-
-## Learn more
-
-You can find the tutorial for this application on my blog -
-
-<https://www.callicoder.com/spring-boot-rest-api-tutorial-with-mysql-jpa-hibernate/>
+3. 用idea 打开这个项目，点击上方运行按钮即可.
